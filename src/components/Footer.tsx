@@ -9,56 +9,46 @@ export default function Footer({ t }: FooterProps) {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             
-            <div className="text-3xl font-bold text-accent mb-3">FgTech</div>
+            <div className="text-3xl font-bold text-accent mb-3">{t('footer.brand')}</div>
             <p className="text-gray-400 text-lg leading-relaxed">
-              IoT for Farming - Transforming Digital Agriculture
+              {t('footer.tagline')}
             </p>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-6">Quick Links</h4>
+            <h4 className="font-bold text-lg mb-6">{t('footer.sections.quickLinks.title')}</h4>
             <ul className="space-y-3 text-gray-400">
-              <li>
-                <a href="#problem" className="hover:text-accent transition text-lg">
-                  Problem
-                </a>
-              </li>
-              <li>
-                <a href="#solution" className="hover:text-accent transition text-lg">
-                  Solution
-                </a>
-              </li>
-              <li>
-                <a href="#features" className="hover:text-accent transition text-lg">
-                  Features
-                </a>
-              </li>
+              {t('footer.sections.quickLinks.links').map((link: any, i: number) => (
+                <li key={i}>
+                  <a href={link.href} className="hover:text-accent transition text-lg">
+                    {link.text}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
           <div>
-            <h4 className="font-bold text-lg mb-6">Company</h4>
+            <h4 className="font-bold text-lg mb-6">{t('footer.sections.company.title')}</h4>
             <ul className="space-y-3 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-accent transition text-lg">
-                  info@fgtech.online
-                </a>
-              </li>
-              <li>
-                <p className="hover:text-accent transition text-lg">
-                  www.fgtech.online
-                </p>
-              </li>
-              <li>
-                <p className="hover:text-accent transition text-lg">
-                  Italy | Europe
-                </p>
-              </li>
+              {t('footer.sections.company.info').map((info: any, i: number) => (
+                <li key={i}>
+                  {info.href ? (
+                    <a href={info.href} className="hover:text-accent transition text-lg">
+                      {info.text}
+                    </a>
+                  ) : (
+                    <p className="hover:text-accent transition text-lg">
+                      {info.text}
+                    </p>
+                  )}
+                </li>
+              ))}
             </ul>
           </div>
 
         </div>
 
         <div className="border-t border-accent/20 pt-8 text-center text-gray-400 text-lg">
-          <p>&copy; 2024 FgTech. All rights reserved.</p>
+          <p dangerouslySetInnerHTML={{ __html: t('footer.copyright') }}></p>
         </div>
       </div>
     </footer>

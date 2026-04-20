@@ -13,7 +13,8 @@ export const translations = {
       cta2: 'Learn About Investment',
     },
     problem: {
-      title: 'The Problem',
+      title: 'Farmers Face Critical Challenges',
+      subtitle: 'The gap between data availability and actionable insights is costing farmers millions',
       description: 'Farmers face critical challenges in modern agriculture that impact productivity and sustainability.',
       items: [
         {
@@ -73,9 +74,10 @@ export const translations = {
           desc: 'DSS provides actionable insights for irrigation and pest management',
         },
       ],
+      statistic: '40% reduction in chemical treatments while improving crop yields and quality',
     },
     features: {
-      title: 'Key Features & Technology',
+      title: 'Comprehensive Platform for Smart Farming',
       items: [
         {
           title: 'Real-Time Monitoring',
@@ -225,7 +227,53 @@ export const translations = {
       ],
     },
     contact: {
-      title: 'Get Started Today',
+      title: 'Join Us in Transforming Agriculture',
+      sections: [
+        {
+          title: 'For Farmers',
+          desc: 'Get personalized support and expert guidance for your farm',
+        },
+        {
+          title: 'For Investors',
+          desc: 'Explore investment opportunities and partnership terms',
+        },
+        {
+          title: 'For Partners',
+          desc: 'Collaborate with us to enhance agricultural solutions',
+        },
+      ],
+      forms: {
+        demo: {
+          title: 'Request a Demo',
+          desc: 'See FgTech in action with a personalized demonstration',
+          fields: {
+            name: 'Name',
+            email: 'Email',
+            farmName: 'Farm Name',
+          },
+          placeholders: {
+            name: 'Your name',
+            email: 'your@email.com',
+            farmName: 'Your farm name',
+          },
+        },
+        investment: {
+          title: 'Investment Interest',
+          desc: 'Learn more about investment opportunities and terms',
+          fields: {
+            name: 'Name',
+            email: 'Email',
+            organization: 'Organization',
+            investmentAmount: 'Investment Amount',
+          },
+          placeholders: {
+            name: 'Your name',
+            email: 'your@email.com',
+            organization: 'Your organization',
+            investmentAmount: 'Investment range',
+          },
+        },
+      },
       ctas: [
         {
           title: 'Schedule Demo',
@@ -240,6 +288,29 @@ export const translations = {
           desc: 'Get in touch with our team for any questions',
         },
       ],
+    },
+    footer: {
+      brand: 'FgTech',
+      tagline: 'IoT for Farming - Transforming Digital Agriculture',
+      sections: {
+        quickLinks: {
+          title: 'Quick Links',
+          links: [
+            { text: 'Problem', href: '#problem' },
+            { text: 'Solution', href: '#solution' },
+            { text: 'Features', href: '#features' },
+          ],
+        },
+        company: {
+          title: 'Company',
+          info: [
+            { text: 'info@fgtech.online', href: 'mailto:info@fgtech.online' },
+            { text: 'www.fgtech.online', href: 'https://www.fgtech.online' },
+            { text: 'Italy | Europe', href: null },
+          ],
+        },
+      },
+      copyright: '&copy; 2024 FgTech. All rights reserved.',
     },
   },
   it: {
@@ -256,7 +327,8 @@ export const translations = {
       cta2: 'Scopri gli Investimenti',
     },
     problem: {
-      title: 'Il Problema',
+      title: 'Gli Agricoltori Affrontano Sfide Critiche',
+      subtitle: 'Il divario tra disponibilità di dati e insight attuabili sta costando milioni agli agricoltori',
       description: 'Gli agricoltori affrontano sfide critiche nell\'agricoltura moderna che impattano la produttività e la sostenibilità.',
       items: [
         {
@@ -316,9 +388,10 @@ export const translations = {
           desc: 'Insights azionabili guidano gli agricoltori a ottimizzare le risorse e massimizzare il rendimento',
         },
       ],
+      statistic: 'Riduzione del 40% dei trattamenti chimici migliorando rese e qualità delle colture',
     },
     features: {
-      title: 'Caratteristiche Principali e Tecnologia',
+      title: 'Piattaforma Completa per l\'Agricoltura Intelligente',
       items: [
         {
           title: 'Rete di Sensori IoT',
@@ -347,7 +420,7 @@ export const translations = {
       ],
     },
     business: {
-      title: 'Modello di Business',
+      title: 'Modello di crescita sostenibile',
       revenue: [
         {
           title: 'Vendita di Hardware',
@@ -358,19 +431,22 @@ export const translations = {
           desc: 'Abbonamento mensile/annuale per piattaforma di analitiche e supporto',
         },
         {
-          title: 'Servizi Premium',
+          title: 'Consulenza',
           desc: 'Consulenza personalizzata, integrazione e moduli di analitiche avanzate',
         },
+        {
+          title: 'Analisi dei dati',
+          desc: 'Dati agricoli anonimizzati e aggregati per la ricerca',
+        }
       ],
       economics: [
-        'ROI medio di 3-5x nel primo anno',
-        'Riduzione del 20-30% nell\'uso dell\'acqua',
-        'Miglioramento del 15-25% nel rendimento delle colture',
-        'Scalabile a fattorie di qualsiasi dimensione',
+        'Basso costo di acquisizione',
+        'Alto lifetime value (LTV)',
+        'Entrate ricorrenti prevedibili'
       ],
     },
     competitive: {
-      title: 'Perché FgTech Spicca',
+      title: 'Perché FgTech',
       items: [
         {
           title: 'Prezzi Ineguagliabili',
@@ -395,31 +471,21 @@ export const translations = {
       title: 'Impatto Reale',
       metrics: [
         {
-          value: '500+',
-          label: 'Fattorie Attive',
-          desc: 'In 5 paesi in programmi pilota',
+          value: '30% - 40%',
+          label: 'Riduzione dei trattamenti chimici',
+          desc: 'Dimostrato in progetti pilota su frutta fresca, vino e birra',
         },
         {
-          value: '45K+',
-          label: 'Ettari Monitorati',
-          desc: 'Raccolta e analisi dati in tempo reale',
-        },
-        {
-          value: '€2,1M',
-          label: 'Ricavi Generati',
-          desc: 'Da hardware e servizi di abbonamento',
-        },
-        {
-          value: '92%',
-          label: 'Fidelizzazione dei Clienti',
-          desc: 'Alta soddisfazione e coinvolgimento ripetuto',
-        },
+          value: '100%',
+          label: 'Mantenimento della resa',
+          desc: 'Gli agricoltori mantengono o migliorano la qualità',
+        }
       ],
       partners: [
-        'Partnership con AgriTech Accelerator',
-        'Collaborazione con Laboratorio di Ricerca Universitaria',
-        'Integrazione con Produttore di Attrezzature Agricole Principale',
-        'Supporto dell\'Iniziativa di Sostenibilità Governativa',
+        'University of Granada (UGR)',
+        'University Mohammed V (UMP)',
+        'Istituto Superiore Mario Boella (ISI)',
+        'H2020-MSCA-RISE Program',
       ],
     },
     financial: {
@@ -444,38 +510,84 @@ export const translations = {
       ],
     },
     team: {
-      title: 'Experienced Leadership',
+      title: 'Il nostro Team',
       members: [
         {
           name: 'Fabrizio Gambarini',
           role: 'Research Leader & PM',
-          bio: 'Innovation and technical strategy',
+          bio: 'Innovazione e strategia tecnica',
         },
         {
           name: 'Aldo Maccaferri',
           role: 'Agronomist',
-          bio: 'Field agriculture expertise',
+          bio: 'Competenze in agricoltura sul campo',
         },
         {
           name: 'Heitor Soares',
           role: 'Remote Sensing Specialist',
-          bio: 'AI models and data analysis',
+          bio: 'Modelli di IA e analisi dei dati',
         },
         {
           name: 'Martina Frizzarin',
           role: 'Economics & Communication',
-          bio: 'Business strategy',
+          bio: 'Strategia di business',
         },
         {
           name: 'Michelangelo Mastrorocco De Grandis',
           role: 'IoT Specialist',
-          bio: 'Data collection expertise',
+          bio: 'Competenze nella raccolta dati',
         }
       ],
-      experience: '50+ years of combined experience in digital agriculture, IoT systems, and agribusiness',
+      experience: 'Oltre 50 anni di esperienza combinata in agricoltura digitale, sistemi IoT e agribusiness',
     },
     contact: {
-      title: 'Inizia Oggi',
+      title: 'Unisciti a Noi nella Trasformazione dell\'Agricoltura',
+      sections: [
+        {
+          title: 'Per Agricoltori',
+          desc: 'Ottieni supporto personalizzato e guida esperta per la tua fattoria',
+        },
+        {
+          title: 'Per Investitori',
+          desc: 'Esplora opportunità di investimento e termini di partnership',
+        },
+        {
+          title: 'Per Partner',
+          desc: 'Collabora con noi per migliorare le soluzioni agricole',
+        },
+      ],
+      forms: {
+        demo: {
+          title: 'Richiedi Demo',
+          desc: 'Vedi FgTech in azione con una dimostrazione personalizzata',
+          fields: {
+            name: 'Nome',
+            email: 'Email',
+            farmName: 'Nome Fattoria',
+          },
+          placeholders: {
+            name: 'Il tuo nome',
+            email: 'tua@email.com',
+            farmName: 'Nome della tua fattoria',
+          },
+        },
+        investment: {
+          title: 'Interesse Investimento',
+          desc: 'Scopri di più sulle opportunità di investimento e i termini',
+          fields: {
+            name: 'Nome',
+            email: 'Email',
+            organization: 'Organizzazione',
+            investmentAmount: 'Importo Investimento',
+          },
+          placeholders: {
+            name: 'Il tuo nome',
+            email: 'tua@email.com',
+            organization: 'La tua organizzazione',
+            investmentAmount: 'Range di investimento',
+          },
+        },
+      },
       ctas: [
         {
           title: 'Programma Demo',
@@ -490,6 +602,29 @@ export const translations = {
           desc: 'Entra in contatto con il nostro team per qualsiasi domanda',
         },
       ],
+    },
+    footer: {
+      brand: 'FgTech',
+      tagline: 'IoT per l\'Agricoltura - Trasformando l\'Agricoltura Digitale',
+      sections: {
+        quickLinks: {
+          title: 'Link Rapidi',
+          links: [
+            { text: 'Problema', href: '#problem' },
+            { text: 'Soluzione', href: '#solution' },
+            { text: 'Caratteristiche', href: '#features' },
+          ],
+        },
+        company: {
+          title: 'Azienda',
+          info: [
+            { text: 'info@fgtech.online', href: 'mailto:info@fgtech.online' },
+            { text: 'www.fgtech.online', href: 'https://www.fgtech.online' },
+            { text: 'Italia | Europa', href: null },
+          ],
+        },
+      },
+      copyright: '&copy; 2024 FgTech. Tutti i diritti riservati.',
     },
   },
 };

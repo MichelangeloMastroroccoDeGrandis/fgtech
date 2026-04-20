@@ -42,7 +42,7 @@ export default function Solution({ t }: SolutionProps) {
         {/* Bottom Statistic Section */}
         <div className="rounded-lg p-6 border-l-4" style={{ backgroundColor: '#062F1D', borderColor: '#0FA958' }}>
           <div className="text-2xl font-bold" style={{ color: '#16C85C' }}>
-            40% reduction in chemical treatments while improving crop yields and quality
+            {t('solution.statistic')}
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ export default function Features({ t }: FeaturesProps) {
     <section id="features" className="py-20 bg-black">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16" style={{ color: '#E5E7EB' }}>
-          Comprehensive Platform for Smart Farming
+          {t('features.title')}
         </h2>
 
         {/* Features Grid - 2 columns */}

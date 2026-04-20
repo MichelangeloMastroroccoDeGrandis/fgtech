@@ -10,12 +10,16 @@ export default function Problem({ t }: ProblemProps) {
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Section Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-          Farmers Face <span className="text-green-500">Critical Challenges</span>
+          {t('problem.title').split(' ').map((word: string, i: number) => 
+            word === 'Critical' || word === 'Sfide' || word === 'Critiche' ? 
+              <span key={i} className="text-green-500">{word} </span> : 
+              <span key={i}>{word} </span>
+          )}
         </h2>
         
         {/* Section Subtitle */}
         <p className="text-xl text-gray-400 text-center mb-16 max-w-4xl mx-auto">
-          The gap between data availability and actionable insights is costing farmers millions
+          {t('problem.subtitle')}
         </p>
 
         {/* Problem Cards Grid */}
